@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header-title">Блог</div>
+</header>
+<main>
+    <section class="post-list component">
+        <h1>Записи</h1>
+        <div id="posts" class="empty"></div>
+    </section>
+    <aside class="component">
+        <section class="create-post">
+            <h1>Создать запись</h1>
+            <form id="postForm">
+                <label>Автор</label>
+                <input type="text" id="author" required>
+                <label>Заголовок</label>
+                <input type="text" id="title" required>
+                <label>Категория</label>
+                <input type="text" id="category" required>
+                <label>Содержание</label>
+                <textarea id="content" required></textarea>
+                <button type="submit">Создать</button>
+            </form>
+        </section>
+        <section class="archive">
+            <h1>Архив</h1>
+            <ul id="archiveList"></ul>
+        </section>
+    </aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body, h1, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    border-bottom: 3px solid #07b148;
+}
+#posts article h1 {
+    border-bottom: none;
+}
+.component {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px dashed #006b09;
+
+}
+
+header {
+    background-color: #006b09;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    border-bottom: 3px solid #07b148;
+    padding: 10px 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-list {
+    flex-grow: 1;
+    max-width: 75%;
+    min-height: 400px;
+}
+
+.post-list .empty {
+    min-height: 150px;
+}
+
+ #archiveList li {
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    margin-bottom: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+#posts article {
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    margin-bottom: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+button {
+    background-color: #006b09;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    width: 80px;
+    height: 30px;
+}
+
+button:focus {
+    background-color: #07b148;
+}
+
+.delete-btn {
+    background-color: #cf3a15;
+}
+
+.archive-btn {
+    background-color: #A3AE9E;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #40493B;
+}
+
+aside {
+    width: 25%;
+}
